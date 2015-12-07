@@ -28,6 +28,7 @@
   max-width: 350px;
 }
 .brand-text {
+  color: #222;
   text-transform: uppercase;
   margin-bottom: 0;
   /* Larger than phablet */
