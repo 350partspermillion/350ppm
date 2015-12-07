@@ -38,6 +38,12 @@
     display: inline-block;
   }
 }
+#current_co2 {
+  display: block;
+}
+#current_co2:after {
+  content: ' ppm';
+}
 .social a {
   margin: 0 20px;
 }
