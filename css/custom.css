@@ -36,12 +36,19 @@ body {
   margin-bottom: 0;
   /* Larger than phablet */
 }
+
 @media (min-width: 550px) {
   .brand-text {
     margin-left: -40px;
     display: inline-block;
   }
 }
+
+.design-image {
+  max-width: 80%;
+  width: 450px;
+}
+
 .social a {
   margin: 0 20px;
 }
