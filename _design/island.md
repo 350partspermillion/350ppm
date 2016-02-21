@@ -1,5 +1,5 @@
 ---
-layout: design
+title: Island Patch
 img: /images/islandpatch.jpg
 ---
 The third design, the Island Patch, evokes wood-cut prints of the past to warn us about sea level rise.

@@ -1,5 +1,5 @@
 ---
-layout: design
+title: Saturn Tee
 img: /images/saturn.jpg
 ---
 The first design, the Saturn Tee, draws on the classic painting "Saturn Devouring His Son" by Francisco Goya. The

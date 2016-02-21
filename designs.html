@@ -1,23 +1,14 @@
 ---
 ---
-
-<div class="row current-co2-container">
-    <div class="four columns center">
-    	<a href="/saturn">
-    		<img src="/images/saturn.jpg" class="design-image"></img>
-    	</a>
-    	<h3>Saturn Tee</h3>
-	</div>
+{% assign loopindex = 0 %}
+{% for design in site.design %}
+	{% cycle 'add row' : '<div class="row">', nil, nil %}
 	<div class="four columns center">
-    	<a href="/fossil">
-    		<img src="/images/rgb.jpg" class="design-image"></img>
-    	</a>
-    	<h3>Fossil Sweat</h3>
+		<a href="{{ design.url }}">
+			<img src="{{ design.img }}" class="design-image">
+		</a>
+		<h3>{{ design.title }}</h3>
 	</div>
-	<div class="four columns center">
-    	<a href="/island">
-    		<img src="/images/islandpatch.jpg" class="design-image"></img>
-    	</a>
-    	<h3>Island Patch</h3>
-	</div>
-</div>
+	{% cycle 'end row' : nil, nil, '</div>' %}
+{% endfor %}
+{% cycle 'end row' : nil, '</div>', '</div>' %}

@@ -1,5 +1,5 @@
 ---
-layout: design
+title: Fossil Sweat
 img: /images/rgb.jpg
 ---
 
