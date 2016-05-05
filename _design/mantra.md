@@ -1,6 +1,6 @@
 ---
 title: Mantra Jacket
-img: /images/350ppm mantra jacket camo peace balance prosperity climate change.jpg
+img: /images/350ppm-mantra-jacket-camo-peace-balance-prosperity-climate-change.jpg
 ---
 The Mantra declares "Peace, Balance, Prosperity". These cornerstones must exist together.
 The rifts present in our world only further victimize the downtrodden,  the poor, and the marginalized. Climate change's pressures will force their fingers into these rifts and split our world asunder.
