@@ -1,6 +1,6 @@
 ---
 title: Balance Tee
-img: /images/balance.jpg
+img: /images/350ppm-350partspermillion-balance-tee-gamera-ocean-acidification-climate-change.jpg
 ---
 The fourth design, the Balance Tee, calls upon classic textbook illustration and pairs it with Gamera, a monster symbolizing our uneasy relationship with the sea.
 The highlight of this design—ocean acidification—is often referred to as the "evil twin" of sea level rise. 

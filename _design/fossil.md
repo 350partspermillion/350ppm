@@ -1,6 +1,6 @@
 ---
 title: Fossil Sweat
-img: /images/rgb.jpg
+img: /images/350ppm-350partspermillion-fossil-sweat-350-sweatshirt-charcoal-print-climate-change.jpg
 ---
 
 The second design, the Fossil Print, appears in the form of the 350 logo. The "Fossil" moniker comes from the fact that
