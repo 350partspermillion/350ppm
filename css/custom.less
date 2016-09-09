@@ -1,5 +1,8 @@
+@import "palette";
+
 body {
-	font-family: "Mate", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+	font-family: "Mate", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: @color-text;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,12 +13,12 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-.row {
-	margin-bottom: 20px;
+.row + .row {
+	margin-top: 20px;
 
 	/* Larger than Desktop HD */
 	@media (min-width: 1200px) {
-		margin-bottom: 40px;
+		margin-top: 40px;
 	}
 }
 
@@ -38,10 +41,12 @@ h1, h2, h3, h4, h5, h6 {
 .brand-image {
 	width: 250px;
 	max-width: 100%;
+	height: auto;
+	fill: @color-text;
 }
 
 .brand-text {
-	color: #222;
+	color: @color-text;
     text-transform: uppercase;
     margin-bottom: 0;
 
@@ -63,4 +68,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .space-between {
 	justify-content: space-between;
+}
+
+.social {
+	a, a:hover {
+		color: @color-sidebar-text;
+	}
+
+	.fa {
+		font-size: 5rem;
+	}
+}
+
+.sidebar {
+	padding: 20px;
+	background-color: @color-sidebar;
+	color: @color-sidebar-text;
 }
