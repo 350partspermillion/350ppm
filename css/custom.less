@@ -2,6 +2,10 @@ body {
 	font-family: "Mate", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1rem;
+}
+
 .center {
 	text-align: center;
 }
@@ -27,12 +31,12 @@ body {
 
 	/* Larger than Desktop HD */
 	@media (min-width: 1200px) {
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 }
 
 .brand-image {
-	width: 350px;
+	width: 250px;
 	max-width: 100%;
 }
 
@@ -53,8 +57,10 @@ body {
 	width: 450px;
 }
 
-.social {
-	a {
-		margin: 0 20px;
-	}
+.flex {
+	display: flex;
+}
+
+.space-between {
+	justify-content: space-between;
 }
