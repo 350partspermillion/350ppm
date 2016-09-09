@@ -29,12 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 .brand-container {
 	/* Larger than tablet */
 	@media (min-width: 750px) {
-		margin-top: 20px;
-	}
-
-	/* Larger than Desktop HD */
-	@media (min-width: 1200px) {
-		margin-top: 20px;
+		padding-top: 20px;
 	}
 }
 
@@ -71,17 +66,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social {
-	a, a:hover {
-		color: @color-sidebar-text;
-	}
-
 	.fa {
 		font-size: 5rem;
 	}
 }
 
 .sidebar {
+	a, a:hover {
+		color: @color-sidebar-link;
+	}
+
 	padding: 20px;
 	background-color: @color-sidebar;
 	color: @color-sidebar-text;
+}
+
+.navigation {
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 3rem;
+
+	a {
+		text-decoration: none;
+	}
 }

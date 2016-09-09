@@ -7,7 +7,7 @@
     <meta charset="utf-8">
 
     <link rel="icon" type="image/png" href="/images/favicon.png">
-    
+
     <script src="https://use.fontawesome.com/bb2ba56cbe.js"></script>
 
     {% include base/styles.html %}
@@ -18,7 +18,17 @@
 <div class="container">
   {% include brand-image.html %}
 
-  {{ content }}
+
+  <div class="row">
+    <div class="eight columns">
+        {{ content }}
+    </div>
+    <div class="four columns">
+
+      {% include sidebar.html %}
+
+    </div>
+  </div>
 </div>
 
 {% include base/scripts.html %}
