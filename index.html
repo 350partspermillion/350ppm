@@ -1,13 +1,18 @@
 ---
-custom_js:
-- /js/index.js
-- http://co2unting.com/co2unter.js
 ---
+{% include about.html %}
 
-<div class="row current-co2-container">
-	<div class="twelve columns center">
-		<h2>Current CO<sub>2</sub>:</h2>
-
-		<h3><span id="current_co2">loading</span> ppm</h3>
-	</div>
+<div class="designs">
+	{% assign loopindex = 0 %}
+	{% for design in site.design %}
+		{% cycle 'add row' : '<div class="row">', nil, nil %}
+		<div class="four columns u-center">
+			<a href="{{ design.url }}">
+				<img src="{{ design.img }}" class="design-image">
+			</a>
+			<h3 class="designs-header">{{ design.title }}</h3>
+		</div>
+		{% cycle 'end row' : nil, nil, '</div>' %}
+	{% endfor %}
+	{% cycle 'end row' : nil, '</div>', '</div>' %}
 </div>
