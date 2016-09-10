@@ -8,6 +8,14 @@ layout: default
       <img src="{{ page.img }}" class="design-image"></img>
     </div>
     <div class="six columns">
-      {{ content }}
+        {{ content }}
+
+        <ul>
+        {% for link_hash in page.links %}
+            {% for link in link_hash %}
+                <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+            {% endfor %}
+        {% endfor %}
+        </ul>
     </div>
 </div>
