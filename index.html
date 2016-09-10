@@ -10,7 +10,7 @@
 			<a href="{{ design.url }}">
 				<img src="{{ design.img }}" class="design-image">
 			</a>
-			<h3>{{ design.title }}</h3>
+			<h3 class="designs-header">{{ design.title }}</h3>
 		</div>
 		{% cycle 'end row' : nil, nil, '</div>' %}
 	{% endfor %}
