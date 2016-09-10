@@ -6,7 +6,7 @@
 	{% assign loopindex = 0 %}
 	{% for design in site.design %}
 		{% cycle 'add row' : '<div class="row">', nil, nil %}
-		<div class="four columns center">
+		<div class="four columns u-center">
 			<a href="{{ design.url }}">
 				<img src="{{ design.img }}" class="design-image">
 			</a>
