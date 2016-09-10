@@ -1,5 +1,11 @@
 .brand-container {
 	padding-top: 20px;
+	text-align: center;
+	
+	/* Larger than phablet */
+	@media (min-width: 550px) {
+		text-align: left;
+	}
 }
 
 .brand-image {
@@ -13,14 +19,12 @@
 	font-family: @font-brand;
 	font-weight: normal;
 	color: @color-brand;
-    text-transform: uppercase;
-    margin-bottom: 0;
-	text-align: center;
+    	text-transform: uppercase;
+    	margin-bottom: 0;
 
-    /* Larger than phablet */
+    	/* Larger than phablet */
 	@media (min-width: 550px) {
 	    margin-left: -40px;
 	    display: inline-block;
-		text-align: left;
 	}
 }
