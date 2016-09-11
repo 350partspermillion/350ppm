@@ -7,7 +7,12 @@
 		color: @color-sidebar-link;
 	}
 
-	padding: 20px 40px;
+    padding: 10px 20px;
 	background-color: @color-sidebar;
 	color: @color-sidebar-text;
+
+	/* Larger than desktop */
+	@media (min-width: 1000px) {
+		padding: 20px 40px;
+	}
 }
