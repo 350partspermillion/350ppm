@@ -1,18 +1,26 @@
 ---
 ---
-{% include about.html %}
+{% include cta.html %}
 
-<div class="designs">
-	{% assign loopindex = 0 %}
-	{% for design in site.design %}
-		{% cycle 'add row' : '<div class="row">', nil, nil %}
-		<div class="four columns u-center">
-			<a href="{{ design.url }}">
-				<img src="{{ design.img }}" class="design-image">
-			</a>
-			<h3 class="designs-header">{{ design.title }}</h3>
+<div class="container">
+	<div class="designs">
+		<div class="row">
+			<div class="twelve columns u-center">
+				<h2>Designs</h2>
+			</div>
 		</div>
-		{% cycle 'end row' : nil, nil, '</div>' %}
-	{% endfor %}
-	{% cycle 'end row' : nil, '</div>', '</div>' %}
+
+		{% assign loopindex = 0 %}
+		{% for design in site.design %}
+			{% cycle 'add row' : '<div class="row">', nil, nil %}
+			<div class="four columns u-center">
+				<a href="{{ design.url }}">
+					<img src="{{ design.img }}" class="design-image">
+				</a>
+				<h3 class="designs-header">{{ design.title }}</h3>
+			</div>
+			{% cycle 'end row' : nil, nil, '</div>' %}
+		{% endfor %}
+		{% cycle 'end row' : nil, '</div>', '</div>' %}
+	</div>
 </div>

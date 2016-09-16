@@ -16,20 +16,12 @@
 </head>
 <body>
 <div class="container">
-  {% include brand-image.html %}
-
-
-  <div class="row">
-    <div class="eight columns">
-        {{ content }}
-    </div>
-    <div class="four columns">
-
-      {% include sidebar.html %}
-
-    </div>
-  </div>
+    {% include brand-image.html %}
 </div>
+
+{{ content }}
+
+{% include footer.html %}
 
 {% include base/scripts.html %}
 </body>

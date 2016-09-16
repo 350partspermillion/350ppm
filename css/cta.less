@@ -1,0 +1,34 @@
+.cta {
+    @cta-padding: 5rem;
+    @cta-margin: 3rem;
+    @cta-font-size: 1.6rem;
+
+    padding-top: @cta-padding;
+    padding-bottom: @cta-padding;
+    margin-bottom: @cta-margin;
+
+    background-color: @color-cta;
+    color: @color-cta-text;
+
+    font-size: @cta-font-size;
+}
+
+.cta-button {
+    @cta-button-border-radius: 8px;
+    @cta-button-font-size: 2.5rem;
+    @cta-button-padding: 0.5em 1em;
+
+    border: none;
+    border-radius: @cta-button-border-radius;
+
+    padding: @cta-button-padding;
+
+    background-color: @color-cta-button;
+    color: @color-cta-button-text;
+
+    font-size: @cta-button-font-size;
+
+    &:hover {
+        color: darken(@color-cta-button-text, 10%);
+    }
+}
