@@ -1,0 +1,21 @@
+.shop-button {
+    @shop-button-padding: 0.2em 0.8em;
+
+    display: inline-block;
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: @button-border-radius;
+
+    padding: @shop-button-padding;
+
+    background-color: @color-shop-button;
+    color: @color-shop-button-text;
+
+    font-size: @button-font-size;
+
+    &:hover {
+        background-color: lighten(@color-shop-button, 10%);
+        color: @color-shop-button-text;
+    }
+}

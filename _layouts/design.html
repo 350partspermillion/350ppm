@@ -13,18 +13,18 @@ layout: default
 
     <div class="row">
         <div class="four columns">
-          <img src="{{ page.img }}" class="design-image"></img>
+          <img class="design-image" src="{{ page.img }}"></img>
         </div>
         <div class="eight columns">
             {{ content }}
 
-            <ul>
             {% for link_hash in page.links %}
                 {% for link in link_hash %}
-                    <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
+                    <p>
+                        <a class="shop-button u-no-decoration u-full-width-mobile" href="{{ link[1] }}">{{ link[0] }}</a>
+                    </p>
                 {% endfor %}
             {% endfor %}
-            </ul>
         </div>
     </div>
 </div>
